@@ -1,0 +1,84 @@
+/* techzone */ 
+.home-style {
+  font-size: 18.5px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.home-style:hover {
+  transform: scale(1.1);
+}
+
+.letter {
+  display: inline-block;
+  animation: colorChange 2s infinite;
+}
+
+.letter:nth-child(1) { animation-delay: 0s; }
+.letter:nth-child(2) { animation-delay: 0.2s; }
+.letter:nth-child(3) { animation-delay: 0.4s; }
+.letter:nth-child(4) { animation-delay: 0.6s; }
+.letter:nth-child(5) { animation-delay: 0.8s; }
+.letter:nth-child(6) { animation-delay: 1s; }
+.letter:nth-child(7) { animation-delay: 1.2s; }
+.letter:nth-child(8) { animation-delay: 1.4s; }
+
+@keyframes colorChange {
+  0% { color: red; }
+  14% { color: orange; }
+  28% { color: yellow; }
+  42% { color: green; }
+  57% { color: blue; }
+  71% { color: indigo; }
+  85% { color: violet; }
+  100% { color: red; }
+}
+
+
+/* search */ 
+form.search {
+    display: flex;
+    align-items: center;
+    width: 25% ;/* Ensures the form takes up full width */
+    border: 2px solid #908f8f; /* Adds a blue border */
+    border-radius: 25px; /* Adds rounded corners */
+    padding: 3px; /* Adds padding inside the search form */
+  }
+  
+  input.keyword {
+    flex-grow: 1; /* Allows the input field to grow and take up available space */
+    padding: 8px;
+    border: none; /* Remove the default border */
+    font-size: 14px;
+    outline: none;
+    border-radius: 15px;
+  }
+  
+
+  
+  .styled-button {
+    background: linear-gradient(45deg, #787979, #a0a0a0); /* Brighter gradient background for hover */    border: 2px solid #8d8a8a; /* Dark blue border */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .styled-button i {
+    color: #ffffff; /* White icon */
+    font-size: 18px;
+  }
+  
+  .styled-button:hover {
+    background: linear-gradient(45deg, #4b4b4b, #a0a0a0); /* Brighter gradient background for hover */
+  }
+  
+  .styled-button:hover i {
+    color: #ffffff; /* White icon */
+  }
+  
